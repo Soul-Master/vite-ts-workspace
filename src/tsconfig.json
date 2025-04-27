@@ -1,0 +1,27 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist",
+    "paths": {
+      "component-a/*": ["../packages/component-a/*"],
+      "component-b/*": ["../packages/component-b/*"],
+      "component-c/*": ["../packages/component-c/*"]
+    }
+  },
+  "references": [
+    { "path": "../packages/component-a" },
+    { "path": "../packages/component-b" },
+    { "path": "../packages/component-c" }
+  ],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.json"
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+    "files": [],
+    "references": [
+        { "path": "packages/component-a" },
+        { "path": "packages/component-b" },
+        { "path": "packages/component-c" },
+        { "path": "src" }
+    ]
+}

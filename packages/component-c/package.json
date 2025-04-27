@@ -1,0 +1,25 @@
+{
+  "name": "component-c",
+  "version": "1.0.0",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "~19.2.4",
+    "react-dom": "~19.2.4",
+    "component-a": "~1.0"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.10",
+    "typescript": "~5.9.3"
+  }
+}
